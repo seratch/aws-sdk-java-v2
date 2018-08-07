@@ -44,7 +44,7 @@ import software.amazon.awssdk.utils.builder.SdkBuilder;
 
 public class AwsJsonAsyncCrc32ChecksumTests {
     @Rule
-    private WireMockRule mockServer = new WireMockRule(WireMockConfiguration.wireMockConfig()
+    public WireMockRule mockServer = new WireMockRule(WireMockConfiguration.wireMockConfig()
                                                                            .port(0)
                                                                            .fileSource(new SingleRootFileSource
                                                                                            ("src/test/resources")));
